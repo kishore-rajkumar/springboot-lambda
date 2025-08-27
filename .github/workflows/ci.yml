@@ -37,5 +37,5 @@ jobs:
           aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws_region: us-east-1
           function_name: your-lambda-function-name
-          zip_file: 'target/your-project-name-1.0.0.jar' # Update to your JAR file path
+          zip_file: 'target/springboot-lambda-0.0.1-SNAPSHOT-lambda-package.zip' # Update to your JAR file path
           handler: 'com.your.package.RequestHandler::handleRequest' # Update to your handler class and method
