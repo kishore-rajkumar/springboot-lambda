@@ -22,6 +22,11 @@ jobs:
 
       - name: Build with Maven
         run: mvn clean package -DskipTests
+
+      # Add this step to debug
+      - name: Verify AWS Credentials
+        run: |
+          aws sts get-caller-identity
           
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
