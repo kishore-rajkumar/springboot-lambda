@@ -35,10 +35,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1 # Adjust to your AWS region
 
-      # Add this step to debug
       - name: Verify AWS Credentials
         run: |
-          aws sts get-caller-identity
+              aws sts get-caller-identity --debug
 
       - name: Deploy to AWS Lambda
         uses: appleboy/lambda-action@v0.1.7
