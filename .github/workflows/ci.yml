@@ -42,4 +42,4 @@ jobs:
           aws_region: ${{ env.AWS_REGION }}
           function_name: SpringBootLambdaFunction
           zip_file: 'target/springboot-lambda-0.0.1-SNAPSHOT-lambda-package.zip' # Update to your JAR file path
-          handler: 'com.kishore.StreamLambdaHandler::handleRequest' # Update to your handler class and method
+          handler: 'com.kishore.springboot_lambda.StreamLambdaHandler::handleRequest' # Update to your handler class and method
